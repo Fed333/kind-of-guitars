@@ -1,0 +1,870 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 80px;
+    background: #F3F1ED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(36px, 96 / 1920 * 100vw, 96px);
+
+    line-height: clamp(72px, 128 / 1920 * 100vw, 128px);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(32px, 72 / 1920 * 100vw, 72px);
+    line-height: 128px;
+    color: #743436;
+
+}
+
+h3 {
+    font-family: 'Playfair Display SC', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 32 / 1920 * 100vw, 32px);
+    line-height: 128px;
+    color: #743436;
+    text-align: center;
+}
+
+.nav-menu {
+    font-family: "Playfair Display SC", sans-serif;
+    max-width: 1920px;
+    width: 67%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 80px;
+
+}
+
+.nav-menu #photo img {
+    position: absolute;
+    z-index: 2;
+    max-width: 155px;
+    max-height: 134px;
+    top: 10px;
+}
+
+.nav-menu a {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 20%;
+    text-decoration: none;
+
+}
+
+.nav-menu p {
+    font-family: Playfair Display SC, sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 16 / 1920 * 100vw, 16px);
+    /*text-shadow: -5px -5px #2AA5A0;*/
+    background: linear-gradient(0deg, #743436, #743436), linear-gradient(255.36deg, #313859 0%, #C27B39 101.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-menu #news p {
+    width: 50%;
+
+}
+
+.nav-menu #species p {
+    width: 50%;
+    margin-left: auto;
+}
+
+main .block-photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    filter: brightness(35%);
+    min-height: 1000px;
+
+}
+
+main .banner {
+    min-height: 35vh;
+}
+
+main .block-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+}
+
+main .block-title {
+    position: relative;
+    width: 60%;
+    margin: 13vw auto 0.5rem auto;
+}
+
+main .block-text p {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(16px, 33 / 1920 * 100vw, 33px);
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main .button-about-us {
+    width: 17%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    margin: 6vw auto;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(230, 198, 255, 0.94);
+    border-radius: 32px;
+}
+
+main .button-about-us button {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(12px, 16 / 1920 * 100vw, 16px);
+    line-height: 150%;
+    letter-spacing: 0.127em;
+    text-transform: uppercase;
+    color: #F29958;
+    order: 1;
+    flex-grow: 0;
+    border: 0;
+    background: transparent;
+}
+
+
+main .section-series {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 1020px;
+    left: 0px;
+    top: 112%;
+    padding: 3.5vw 0;
+    background: #F3F1ED;
+}
+
+.text {
+    width: 99%;
+    margin: 96px auto 54px;
+}
+
+.text h2 {
+    width: 100%;
+    text-align: center;
+    color: #284157;
+}
+
+.slider-line-1 .photo {
+    display: flex;
+    width: 1170px;
+
+}
+
+.slick-prev {
+    left: 12%;
+}
+
+.slick-prev:active {
+    border: none;
+}
+
+.slick-next {
+    border: none;
+    right: 12%;
+}
+
+.slider-tabs-1 .slick-dots {
+    margin-top: 35px;
+}
+
+.slider-tabs-1 .slick-dots li {
+    list-style: none;
+
+}
+
+.slider-tabs-1 .slick-dots button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background: #F7B686;
+    border-radius: 50%;
+    margin: 0px 10px;
+
+}
+
+
+.container-tabs {
+    margin: 0 auto;
+}
+
+.rectangle {
+    height: 60px;
+    width: 210px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.text-slider {
+    text-align: center;
+    width: 99%;
+    padding: 22px 0px 11px 0px;
+}
+
+.text-slider .area {
+    margin: 24px 0 5px 0;
+}
+
+.block-rectangle {
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0px 0px 35px 0px;
+}
+
+.block-rectangle .rectangle p {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 34px;
+    height: 60px;
+    font-size: calc(11px + 2 * (100vh / 1920));
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+
+.slider .slick-dots li.slick-active button {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.ui-tabs-tab {
+    list-style: none;
+}
+
+.container .photo {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container .photo img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+main ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 29px auto;
+}
+
+.slick-slider .slick-arrow {
+    position: absolute;
+    cursor: pointer;
+    top: 95%;
+    z-index: 10;
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+
+.slick-prev {
+    background: url("../img/left.svg") 0 0 no-repeat;
+}
+
+.slick-next {
+    background: url("../img/right.svg") 0 0 no-repeat;
+}
+
+main .block-section-title-series {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.block-section-title-series, .block-see-all {
+    display: flex;
+}
+
+.block-see-all {
+    align-self: center;
+    align-items: center;
+    justify-content: end;
+}
+
+main .block-see-all a {
+    text-decoration: none;
+}
+
+.block-see-all p {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.127em;
+    text-transform: uppercase;
+    color: #F29958;
+}
+
+.block-title-series {
+    width: 50%;
+    margin: auto auto 20px 10px;
+}
+
+.block-see-all {
+    width: 50%;
+}
+
+.block-see-all p {
+    padding-right: 5px;
+}
+
+.section--about-us .wrap {
+    width: 80.5%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.section--about-us {
+    background: #F3F1ED;
+    padding: 0 0 12vw 0;
+}
+
+.section--about-us .wrap .section-photo {
+    width: 63%;
+    padding: 0 10vw 0 0;
+}
+
+.section--about-us .wrap .section-photo img {
+    max-width: 860px;
+    width: 110%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section--about-us .wrap .section-text {
+    margin: 4rem auto;
+    width: 37%;
+}
+
+.section--about-us .wrap .section-text .text-about-us {
+    margin: 2.1rem auto;
+}
+
+.section--about-us .wrap .section-text .text-about-us p {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #001B42;
+}
+
+.section--about-us .wrap .section-text .text-about-us span {
+    padding: 1rem 0;
+}
+
+.section--about-us .wrap .section-text .title-about-us h3 {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(26px, 40 / 1920 * 100vw, 40px);
+    line-height: 53px;
+    color: #743436;
+}
+
+.section--about-us .wrap .section-text .button-section-about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+    width: 183px;
+    height: 54px;
+    border: 1px solid #F49B75;
+    border-radius: 32px;
+}
+
+.section--about-us .wrap .section-text .button-section-about-us button {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.127em;
+    text-transform: uppercase;
+    color: #F29958;
+    border: 0;
+}
+
+footer .footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-logo .logo-img {
+    display: flex;
+    justify-items: center;
+    margin: 10px auto;
+}
+
+footer .footer-logo .logo-img img {
+    max-width: 198px;
+    max-height: 234px;
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer-logo .logo-text h4 {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 24 / 1920 * 100vw, 24px);
+    line-height: 32px;
+    text-align: center;
+}
+
+footer .footer-logo .social-networks {
+    display: flex;
+    margin: 20px auto;
+}
+
+footer .footer-logo .social-networks .network {
+    padding: 0 20px;
+}
+
+main .button-about-us:hover {
+    cursor: pointer;
+    opacity: 0.75
+}
+
+main .button-about-us a button:hover {
+    cursor: pointer;
+}
+
+.button-section-about-us:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+    background: #F3F1ED;
+}
+
+
+.section-title-types-of-guitars h1 {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(36px, 72 / 1920 * 100vw, 72px);
+    line-height: 96px;
+    text-align: center;
+    color: #743436;
+}
+
+.section-title-types-of-guitars {
+    margin: 5vw auto;
+}
+
+.section-electric-guitars {
+    margin: 5vw auto;
+}
+
+.block-text h3 {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(26px, 72 / 1920 * 100vw, 40px);
+    line-height: 53px;
+    color: #743436;
+}
+
+
+.container-guitars {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.section-photo {
+    position: relative;
+    width: 100%;
+}
+
+.section-photo .box_img {
+    position: absolute;
+    z-index: -2;
+    margin: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 58vw;
+    height: 55.5vw;
+    min-width: 600px;
+    min-height: 300px;
+}
+
+
+.flex-block-information {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-guitar {
+    padding-top: clamp(50px, 110 / 1920 * 100vw, 110px);
+    padding-bottom: clamp(15px, 110 / 1920 * 100vw, 110px);
+}
+
+.section-guitar .container-guitars .flex-block-information .section-photo {
+    width: 50%;
+}
+
+.section-guitar .container-guitars .flex-block-information .section-photo .box_img {
+    max-width: 1100px;
+    max-height: 1070px;
+    right: auto;
+
+}
+
+.section-guitar .container-guitars .flex-block-information .text-native-services {
+    width: 50%;
+}
+
+.section-guitar .container-guitars .flex-block-information .text-native-services .header-h2-services {
+    padding: clamp(0px, 0.4166666667vw, 8px) 0;
+}
+
+.section-guitar .container-guitars .flex-block-information .text-native-services .paragraph-text-guitar {
+    padding: clamp(10px, 1.3020833333vw, 25px) 0;
+}
+
+.section-guitar .container-guitars .flex-block-information .text-native-services .paragraph-text-guitar p {
+    font-size: clamp(14px, 18 / 1920 * 100vw, 18px);
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #001B42;
+}
+
+.section-guitar .container-guitars .flex-block-information .text-native-services .btn-circle {
+    padding: clamp(0px, 0.9375vw, 18px) 0;
+}
+
+.section-guitar .container-guitars .section-photo .box_img {
+    max-width: 800px;
+    max-height: 1030px;
+}
+
+/*Electric Guitars*/
+
+.electric-guitars .section-photo .box_img img {
+    width: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.section-guitar .container-guitars .electric-guitars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-guitar .container-guitars .electric-guitars .section-photo .box_img {
+    left: 23vw;
+    top: -22vw;
+}
+
+.electric-guitars .section-photo .box_img img {
+    width: 75%;
+}
+
+
+/*Acoustic Guitars*/
+
+.section-guitar .container-guitars .acoustic-guitars .section-photo .box_img {
+    left: -8vw;
+    top: -18vw
+}
+
+.section-guitar .container-guitars .flex-block-information .acoustic-guitars {
+    flex-direction: row;
+}
+
+.acoustic-guitars .section-photo .box_img img {
+    width: 40%;
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+/*Bass Guitars*/
+
+.bass-guitars .section-photo .box_img img {
+    width: 50%;
+    position: absolute;
+    transform: rotate(10deg);
+}
+
+.section-guitar .container-guitars .bass-guitars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-guitar .container-guitars .bass-guitars .section-photo .box_img {
+    left: 13vw;
+    top: -28vw;
+}
+
+.bass-guitars .section-photo .box_img img {
+    width: 90%;
+}
+
+/*12 String Guitars*/
+
+.section-guitar .container-guitars .string_12-guitars
+.section-photo .box_img {
+    left: -8vw;
+    top: -18vw
+}
+
+.section-guitar .container-guitars .flex-block-information .string_12-guitars {
+    flex-direction: row;
+}
+
+.string_12-guitars .section-photo .box_img img {
+    width: 40%;
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+/*Classic Guitar*/
+
+.classic-guitars .section-photo .box_img img {
+    width: 50%;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.section-guitar .container-guitars .classic-guitars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-guitar .container-guitars .classic-guitars .section-photo .box_img {
+    left: 27vw;
+    top: -22vw;
+}
+
+.classic-guitars .section-photo .box_img img {
+    width: 52%;
+}
+
+/*Electroacoustic Guitar*/
+
+.section-guitar .container-guitars .electroacoustic-guitars
+.section-photo .box_img {
+    left: -25.5vw;
+    top: -21vw
+}
+
+.section-guitar .container-guitars .flex-block-information .electroacoustic-guitars {
+    flex-direction: row;
+}
+
+.electroacoustic-guitars .section-photo .box_img img {
+    width: 90%;
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+/**/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs__links {
+    background: 100% / 100% url("../img/Rectangle 31.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    order: 0;
+    white-space: nowrap;
+}
+
+.tabs__links > a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+.tabs__links > a:hover {
+    opacity: 0.5;
+}
+
+.tabs > #content-1:target ~ .tabs__links > a[href="#content-1"],
+.tabs > #content-2:target ~ .tabs__links > a[href="#content-2"],
+.tabs > #content-3:target ~ .tabs__links > a[href="#content-3"] {
+    background-color: rgba(227, 242, 253, 0.3);
+    cursor: default;
+}
+
+.tabs > div:not(.tabs__links) {
+    display: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+@media (min-width: 576px) {
+    .tabs {
+        flex-direction: row;
+    }
+
+    .tabs__links {
+        flex-direction: column;
+        border: none;
+        box-shadow: none;
+    }
+
+    .tabs__links > a {
+        color: white;
+        margin: 20px auto;
+    }
+
+    .tabs__links > a:last-child {
+        margin-bottom: 0;
+    }
+
+    .tabs > div:not(.tabs__links) {
+        padding-left: 15px;
+    }
+}
+
+.tabs > div:target {
+    display: block;
+}
+
+.container_accessories .tabs .block-photo_content {
+    display: flex;
+    justify-content: center;
+}
+
+.container_accessories .tabs .block-photo_content img {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.container_accessories .tabs p {
+    font-size: clamp(14px, 18 / 1920 * 100vw, 18px);
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #001B42;
+    padding: 0 20px;
+}
+
+.container_accessories .tabs h3 {
+
+}
+
+.container_accessories .tabs {
+    padding: 100px 0 0 0;
+    background: #F3F1ED;
+}
+
+.container_accessories .tabs #content-3 .block-photo_content img {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.container_accessories .tabs #content-2 .block-photo_content img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.block-accessories_carusel .block-section-title-series {
+    width: 100%;
+}
+
+.block-accessories_carusel .block-section-title-series .block-see-all {
+    width: 85%;
+}
+
+.section_accessories .slick-dots button {
+    display: none;
+}
