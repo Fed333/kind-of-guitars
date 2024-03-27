@@ -74,13 +74,19 @@ h3 {
     top: 10px;
 }
 
-.nav-menu a {
+.nav-menu .nav-menu__item {
     display: flex;
     justify-content: center;
     align-self: center;
     width: 20%;
     text-decoration: none;
 
+}
+
+.nav-menu .nav-menu__item:hover p {
+    background: linear-gradient(0deg, #d9727e, #d9727e), linear-gradient(255.36deg, #313859 0%, #C27B39 101.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-menu p {
@@ -93,9 +99,9 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.nav-menu #news p {
+.nav-menu #langSwitch div {
     width: 50%;
-
+    margin-right: auto;
 }
 
 .nav-menu #species p {
@@ -867,4 +873,54 @@ main .button-about-us a button:hover {
 
 .section_accessories .slick-dots button {
     display: none;
+}
+
+.dropdown-wrapper {
+
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-wrapper p {
+    user-select: none;
+}
+
+.dropdown-wrapper:hover {
+    cursor: pointer;
+}
+
+.dropdown-button {
+   display: flex;
+   justify-content: center;
+   position: relative;
+
+}
+
+.dropdown-button img {
+    margin-left: 0.5rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    top: 100%;
+    width: 100%;
+    margin: 0.375rem 0 0 0;
+}
+
+.dropdown-wrapper.dropdown-wrapper--open .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 0.125rem;
+    text-align: center;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
 }
