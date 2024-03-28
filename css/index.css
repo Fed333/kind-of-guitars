@@ -844,10 +844,6 @@ main .button-about-us a button:hover {
     padding: 0 20px;
 }
 
-.container_accessories .tabs h3 {
-
-}
-
 .container_accessories .tabs {
     padding: 100px 0 0 0;
     background: #F3F1ED;
@@ -876,7 +872,6 @@ main .button-about-us a button:hover {
 }
 
 .dropdown-wrapper {
-
     display: flex;
     align-items: center;
 }
