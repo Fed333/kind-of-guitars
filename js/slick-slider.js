@@ -1,5 +1,9 @@
-jQuery(document).ready(function ($) {
-    let slick_1 = $('.slider-tabs-1').slick({
+export {
+    initSlickSlider
+}
+
+function initSlickSlider() {
+    return $('.slider-tabs-1').slick({
         dots: true,
         arrows: true,
         slidesToShow: 3,
@@ -26,5 +30,5 @@ jQuery(document).ready(function ($) {
                 }
             }
         ]
-    })
-})
+    });
+}

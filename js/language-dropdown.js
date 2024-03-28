@@ -2,7 +2,7 @@ export {
     initLanguageDropdown
 }
 
-function initLanguageDropdown(wrapperId) {
+function initLanguageDropdown(wrapperId, switchLangCallback) {
    
     const dropdownWrapper = getDropdownWrapper(wrapperId);
     const dropdownArrow = getDropdownArrow(wrapperId);
@@ -22,8 +22,9 @@ function initLanguageDropdown(wrapperId) {
             if (chosenLang !== activeLang) {
                 console.log("Changing language to: " + chosenLang);
                 document.documentElement.setAttribute('lang', chosenLang);
+                
+                switchLangCallback(chosenLang);
             }
-            
           }
     });
 }
