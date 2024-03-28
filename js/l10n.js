@@ -31,8 +31,8 @@ const translations = {
         This allows guitarists to create a wide range of sounds and styles, from clean and soft tones 
         to harsh and distorted riffs. Electric guitars come in many shapes, sizes and styles, each with their own unique features and characteristics. 
         Whether you're a beginner or a seasoned player, there's an electric guitar that's perfect for you.`,
-        accoustic: 'Acoustic guitars',
-        paragraph_accoustic_guitar: `Acoustic guitars are a classic and versatile musical instrument that has been around for centuries. 
+        acoustic: 'Acoustic guitars',
+        paragraph_acoustic_guitar: `Acoustic guitars are a classic and versatile musical instrument that has been around for centuries. 
         They produce sound acoustically, that is, the sound is created by the vibration of the strings, which is then amplified by the body of the guitar. 
         This creates a warm, natural sound that's perfect for many genres of music, from folk and country to classical and pop. 
         Acoustic guitars come in a wide range of sizes and styles, each with its own unique sound and character. 
