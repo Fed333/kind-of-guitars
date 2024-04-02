@@ -2,9 +2,10 @@ export {
     initLanguageDropdown
 }
 
-function initLanguageDropdown(wrapperId, switchLangCallback) {
-   
+function initLanguageDropdown(wrapperId, switchLangCallback, supportedLanguages) {
     const dropdownWrapper = getDropdownWrapper(wrapperId);
+    dropdownWrapper.innerHTML = renderDropdown(supportedLanguages);
+
     const dropdownArrow = getDropdownArrow(wrapperId);
     const dropdownContent = getDropdownContent(wrapperId);
 
@@ -27,6 +28,27 @@ function initLanguageDropdown(wrapperId, switchLangCallback) {
             }
           }
     });
+}
+
+function renderDropdown(supportedLanguages) {
+    const markup = `
+    <div class="dropdown-button">
+        <p class="l10n" l10n-key="language">Мова</p>
+        <img class="dropdown-arrow" src="img/arrow_down.png" alt="" width="16"/>
+        <ul class="dropdown-content">
+            ${renderDropdownContent(supportedLanguages)}
+        </ul>
+    </div>`;
+    return markup;
+}
+
+function renderDropdownContent(supportedLanguages) {
+    let content = '';
+    
+    for (let lang in supportedLanguages) {
+        content += `<li lang="${lang}">${supportedLanguages[lang]}</li>`;
+    }
+    return content;
 }
 
 function toggleDropdown(wrapperId) {

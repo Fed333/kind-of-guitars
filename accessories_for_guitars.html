@@ -14,25 +14,21 @@
 <header id="header">
     <div class="nav-menu">
         <a class="nav-menu__item" href="types_of_guitars.html" id="species">
-            <p>Види гітар</p>
+            <p class="l10n" l10n-key="kinds_of_guitars">Види гітар</p>
         </a>
         <a class="nav-menu__item" href="accessories_for_guitars.html">
-            <p>Аксесуари</p>
+            <p class="l10n" l10n-key="accessories">Аксесуари</p>
         </a>
         <a class="nav-menu__item" href="index.html" id="photo">
             <img src="img/logo.png" alt="logo">
         </a>
         <a class="nav-menu__item" href="index.html#section__about-us">
-            <p>Про нас</p>
+            <p class="l10n" l10n-key="about_us">Про нас</p>
         </a>
         <div id="langSwitch" class="nav-menu__item dropdown-wrapper" href="#" tabindex="0">
             <div class="dropdown-button">
                 <p>Мова</p>
                 <img class="dropdown-arrow" src="img/arrow_down.png" alt="" width="16"/>
-                <ul class="dropdown-content">
-                    <li lang="uk">Українська</li>
-                    <li lang="en">Англійська</li>
-                </ul>
             </div>
         </div>
     </div>
@@ -87,7 +83,7 @@
             <a href="index.html"> <img src="./img/logo.png" alt=""></a>
         </div>
         <div class="logo-text">
-            <h4>Види Гітар</h4>
+            <h4 class="l10n" l10n-key="kinds_of_guitars">Види гітар</h4>
         </div>
         <div class="social-networks">
             <div class="network facebook">
@@ -105,6 +101,13 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+        integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script type="module">
     import { initI18n } from './js/i18n.js';
 

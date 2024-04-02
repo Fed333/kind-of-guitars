@@ -1,15 +1,17 @@
 export {
-    localizePage
+    localizePage,
+    fetchSupportedLanguages
 }
 
 
 const translationApiUrl = 'https://ncvn0l1s6f.execute-api.eu-central-1.amazonaws.com/dev/translations';
-
-const supportedLanguages = ['en', 'uk']; // Pull it from AWS Lambda
+const managementApiUrl = 'https://ncvn0l1s6f.execute-api.eu-central-1.amazonaws.com/dev/management/supported-languages';
 
 async function localizePage(language) {
     
-    if (!supportedLanguages.includes(language)) {
+    const supportedLanguages = await fetchSupportedLanguages();
+
+    if (!supportedLanguages.hasOwnProperty(language)) {
         console.log("Not supported language: " + language + ". Falling back to English.");
         language = 'en';
     }
@@ -40,8 +42,22 @@ async function fetchLanguageTranslations(language, messageKeys) {
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-            console.log('Response from AWS Lambda:', data);
+            console.log('Response from AWS Lambda, language translations:', data);
         },
     });
+    return JSON.parse(response.body);
+}
+
+async function fetchSupportedLanguages() {
+    
+    const response = await $.ajax({
+        url: managementApiUrl,
+        type:'GET',
+        dataType: 'json',
+        success: function(data) {
+            console.log('Response from AWS Lambda, supported languages:', data);
+        },
+    })
+
     return JSON.parse(response.body);
 }
